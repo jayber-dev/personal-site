@@ -1,0 +1,38 @@
+body {
+  background-color:#B8FEC6;
+}
+
+ol {
+  padding-left: 7%;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-top-width: medium;
+  width: 90%;
+}
+
+img {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin-left:0.1%;
+}
+
+table {
+  padding-left: 5%;
+  
+}
+
+h1 {
+  background-color: #B8FEC6;
+  color: #137920;
+  text-shadow: 1px 1px 2px black;
+}
+
+h3 {
+  background-color: #B8FEC6;
+  color: #137920;
+  text-shadow: 1px 1px 2px black;
+}
