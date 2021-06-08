@@ -1,8 +1,33 @@
 body {
   background-color:#B8FEC6;
 }
+body {
+  animation-name: body_color_change;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  background-color: #B8FEC6;
+}
+@keyframes body_color_change {
+  0% {background-color: white;}
+  50% {background-color: #ffaaa7;}
+  100 {background-color: #B8FEC6;}
+}
+.main_p {
+  position: absolute;
+  top:50px; left:300px;
+  font-size: 25px;
+  color: #137920
 
-ol {
+}
+
+.woman_merits {
+  position: relative;
+  top:70px;
+}
+
+.merits_list {
+  position: relative;
+  top:70px;
   padding-left: 7%;
 }
 
@@ -12,27 +37,78 @@ hr {
   border-top-width: medium;
   width: 90%;
 }
+@keyframes img_rotation {
+  100% {transform: rotateY(360deg);}
+}
+@keyframes logo_mover {
+  0% {left: 1000px;top:-100px}
+}
 
-img {
+.logo {
+  animation-name: logo_mover;
+  animation-duration: 4s;
+  position: absolute;
+  top:70px; left:900px;
+  height: 100px;
+  width: 100px;
+}
+
+.main_img {
+  animation-name: img_rotation;
+  animation-duration: 4s;
+  animation-delay: 3.8s;
   display: block;
-  height: 200px;
+  border-radius: 90%;
+  position: relative;
+  height: 220px;
   width: 200px;
   margin-left:0.1%;
 }
 
-table {
+.top_table {
   padding-left: 5%;
-  
+  position:absolute;
 }
-
+@keyframes h1_move {
+  0% {transform: rotate(360deg); position: relative; top: 0; left: 0px;}
+  50% {position: relative; top: 300px; left: 300px;}
+  100% {position: relative; top:0px; left:0px;}
+}
 h1 {
-  background-color: #B8FEC6;
+  animation-name: h1_move;
+  animation-duration: 4s;
   color: #137920;
   text-shadow: 1px 1px 2px black;
 }
 
 h3 {
-  background-color: #B8FEC6;
   color: #137920;
   text-shadow: 1px 1px 2px black;
+}
+
+
+a {
+    transform: rotate(90deg);
+    color: black;
+    width: 50px;
+    position: relative;
+    padding-left: 20px;
+    top: 0px;
+    left: 50px;
+}
+
+.events_header {
+  position: relative;
+  top:260px; left:45.7%;
+}
+
+.events_table {
+  position:relative;
+  top:250px; left:45%;
+}
+
+.intro_words {
+  position: relative;
+  top:75px;
+  margin-left: 5%;
 }
